@@ -1,0 +1,18 @@
+{
+    "name": "ixcom/dins-php-framework",
+    "description": "a php framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "轩元工作室",
+            "email": "master@ixcom.cn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DinsFrameWork\\": "src/"
+        }
+    }
+}
