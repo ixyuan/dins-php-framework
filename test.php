@@ -6,6 +6,6 @@
 
 require_once __DIR__."./vendor/autoload.php";
 
-use DinsFrameWork\HelloWorld;
+use dins\App;
 
-HelloWorld::say();
+App::say();

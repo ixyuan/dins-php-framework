@@ -1,10 +1,12 @@
 <?php
 
-namespace DinsFrameWork;
+namespace dins;
 
-class HelloWorld{
+class App {
+
 	static public function say ()
 	{
 		echo "hello world";
 	}
+
 }
