@@ -1,17 +1,23 @@
 <?php
+
 // dins php framework
+
 namespace dins;
 
 class App {
+
+	protected $rootPath;
+	protected $appPath;
+	protected $runtimePath;
 
 	public function __construct ()
 	{
 		// 项目根目录
 		$this->rootPath		= dirname(__DIR__) . DIRECTORY_SEPARATOR;
-		// 框架核心目录
-		$this->framePath	= $this->rootPath . 'core' . DIRECTORY_SEPARATOR;
+
 		// 应用目录
 		$this->appPath		= $this->rootPath . 'app' . DIRECTORY_SEPARATOR;
+
 		// 日志目录
 		$this->runtimePath	= $this->rootPath . 'runtime' . DIRECTORY_SEPARATOR;
 	}
@@ -20,6 +26,28 @@ class App {
 	{
 		// ..
 	}
+
+    static public function run ()
+    {
+
+
+        // 调试模式
+
+        // 配置路径
+        $appPath = $this->getAppPath();
+        $configPath = $this->getConfigPath();
+
+
+
+        // 路由分发
+
+        
+    }
+
+    static public function loader ($class)
+    {
+
+    }
 
 	/**
 	 * 获取应用根目录
